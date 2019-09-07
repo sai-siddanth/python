@@ -1,0 +1,26 @@
+i=int(input('enter no.of. rows and columns'))
+N=[]
+r=0
+t=0
+for q in range(0,i):
+    n=[]
+    print('enter elements in ',q+1,'row')
+    for w in range(0,i):
+        x=int(input())
+        n.append(x)
+    N.append(n)
+print(N)
+for e in range(0,i):
+      N[t][r]=0
+      r+=1
+      t+=1
+print('done')
+t=0
+for w in range(0,i):
+      N[t][r-1]=0
+      t+=1
+      r-=1
+for e in N:
+      for o in e:
+            print(o,end='  ')
+      print()
