@@ -1,0 +1,13 @@
+n=int(input('enter no.of elements in 1st list'))
+m=int(input('enter no.of elements in 2st list'))
+N=[]
+M=[]
+print('enter elements in list 1')
+for i in range(0,n):
+      x=input()
+      N.append(x)
+print('enter elements in list 2')
+for i in range(0,m):
+      x=input()
+      M.append(x)
+print(list(set(N)-set(M)))
