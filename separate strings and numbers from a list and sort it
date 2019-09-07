@@ -1,0 +1,16 @@
+n=int(input('enter length of list'))
+N=[]
+string=[]
+numbers=[]
+for i in range(0,n):
+   x=input()
+   N.append(x)
+for t in N:
+    if t.isalpha()==True:
+        string.append(t)
+    else:
+        numbers.append(t)
+numbers.sort()
+string.sort()
+print(numbers)
+print(string)
