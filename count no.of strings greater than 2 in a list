@@ -1,8 +1,8 @@
 n=int(input('enter lenght of list'))
 N=[]
 t=0
-for i in range(0,n):
-    x=input('enter strin')
+x=input('enter string')
+for i in range(0,n): 
     N.append(x)
 for e in N:
     if len(e)>2:
