@@ -40,4 +40,4 @@ w=list(set(w))
 if len(w)==1:
       print('MAGIC SQUARE')
 else:
-      print('MAGIC SQUARE')
+      print('NOT MAGIC SQUARE')
