@@ -14,7 +14,6 @@ for e in range(0,i):
       N[t][r]=0
       r+=1
       t+=1
-print('done')
 t=0
 for w in range(0,i):
       N[t][r-1]=0
