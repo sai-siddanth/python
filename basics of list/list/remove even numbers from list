@@ -1,0 +1,9 @@
+n=int(input('enter no.of elements in list'))
+N=[]
+for i in range(0,n):
+      x=int(input())
+      N.append(x)
+for i in N:
+      if i%2==0:
+            N.remove(i)
+print(N)
