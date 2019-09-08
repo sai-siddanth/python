@@ -1,0 +1,44 @@
+n=int(input())
+N=[]
+for i in range(0,n):
+      w=[]
+      print('enter elements in ',i+1,'row')
+      for o in range(0,n):
+            x=int(input())
+            w.append(x)
+      N.append(w)
+w=[]
+s=[]
+e=0
+for i in N:
+      g=0
+      for o in i:
+            g+=o
+      w.append(g)
+      f=0
+      p=0
+      for o in i:
+            f=f+N[p][e]
+            p+=1
+      w.append(f)
+      e+=1
+q=0
+f=0
+j=0
+for k in range(0,n):
+      q=q+N[f][j]
+      f+=1
+      j+=1
+w.append(q)
+q=0
+f=0
+for k in range(0,n):
+      q=q+N[f][j-1]
+      f+=1
+      j-=1
+w.append(q)
+w=list(set(w))
+if len(w)==1:
+      print('MAGIC SQUARE')
+else:
+      print('MAGIC SQUARE')
