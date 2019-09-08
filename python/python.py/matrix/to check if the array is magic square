@@ -1,4 +1,4 @@
-n=int(input())
+n=int(input('enter no.of rows and columns'))
 N=[]
 for i in range(0,n):
       w=[]
