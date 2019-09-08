@@ -8,7 +8,6 @@ for i in range(0,n):
             w.append(x)
       N.append(w)
 w=[]
-s=[]
 e=0
 for i in N:
       g=0
