@@ -1,7 +1,0 @@
-y=input()
-M=set(y.lower())
-N=M-set('aeiou ')
-if len(N)==21:
-    print('Consogram')
-else:
-    print('Not consogram')
