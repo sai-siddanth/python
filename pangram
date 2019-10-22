@@ -1,0 +1,15 @@
+x=input()
+x=x.lower()
+x=list(x)
+for i in range(0,x.count(' ')):
+               x.remove(' ')
+y=set(x)
+print(x)
+print(y)
+n=len(x)
+a=len(y)
+print(a,n)
+if a==n:
+    print('Pangram')
+else:
+    print('Not pangram')
