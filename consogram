@@ -1,9 +1,0 @@
-import re
-y=input()
-M=set(y.lower())
-N=M-set('aeiou ')
-print(N)
-if len(N)==21:
-    print('Consogram')
-else:
-    print('Not consogram')
