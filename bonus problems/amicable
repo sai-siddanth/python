@@ -1,0 +1,18 @@
+x=int(input())
+y=int(input())
+N=[]
+M=[]
+i=2
+o=2
+for i in range(i,x):
+    if x%i==0:
+        N.append(i)
+for o in range(o,y):
+    if y%o==0:
+        M.append(o)
+g=sum(N)+1
+s=sum(M)+1
+if g==y and s==x:
+    print('Yes')
+else:
+    print('No')
