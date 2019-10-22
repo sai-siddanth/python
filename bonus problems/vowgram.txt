@@ -1,0 +1,6 @@
+x=input()
+x=set(x.lower())
+if set('aeiou')<=x:
+    print('Vowgram')
+else:
+    print('Not vowgram')
