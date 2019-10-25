@@ -1,0 +1,22 @@
+def kan(x,y):
+    if set(y)<=set(x):
+        n=[]
+        for i in x:
+            if x.count(i)>1:
+                x.remove(i)
+        for i in y:
+            n.append(x.index(i))
+        m=0
+        for i in range(0,len(n)-1):
+            if n[i]<n[i+1]:
+                m+=1
+        if m==len(n)-1:
+            print('True')
+        else:
+            print('False')
+    else:
+        print('False')
+x=list(input())
+y=list(input())
+kan(x,y)
+
