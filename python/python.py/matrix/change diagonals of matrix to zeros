@@ -1,25 +1,37 @@
-i=int(input('enter no.of. rows and columns'))
-N=[]
-r=0
-t=0
-for q in range(0,i):
-    n=[]
-    print('enter elements in ',q+1,'row')
-    for w in range(0,i):
-        x=int(input())
-        n.append(x)
-    N.append(n)
-print(N)
-for e in range(0,i):
-      N[t][r]=0
-      r+=1
-      t+=1
-t=0
-for w in range(0,i):
-      N[t][r-1]=0
-      t+=1
-      r-=1
-for e in N:
-      for o in e:
-            print(o,end='  ')
-      print()
+# Python  program to change value of 
+# diagonal elements of a matrix to 0. 
+MAX = 100
+  
+# to print the resultant matrix 
+def print_1(mat, n, m): 
+      
+    for i in range(n): 
+        for j in range(m): 
+            print( mat[i][j], end = " ") 
+  
+        print() 
+  
+# function to change the values 
+# of diagonal elements to 0 
+def makediagonalzero(mat, n, m): 
+  
+    for i in range(n): 
+        for j in range(m): 
+  
+            # right and left diagonal condition 
+            if (i == j or (i + j + 1) == n): 
+                mat[i][j] = 0
+  
+    # print resultant matrix 
+    print_1(mat, n, m) 
+  
+# Driver code 
+if __name__ == "__main__": 
+  
+    n = 3
+    m = 3
+    mat = [[ 2, 1, 7 ], 
+           [ 3, 7, 2 ], 
+           [ 5, 4, 9 ]] 
+  
+    makediagonalzero(mat, n, m) 
